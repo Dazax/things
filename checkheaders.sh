@@ -6,6 +6,11 @@
 #
 ###########
 
+if [ "$1" == "" ]; then
+	echo "Usage: ./checkheaders.sh ip/hostname"
+	exit 0
+fi
+
 TMP_RESULT=/tmp/checkheaders.tmp
 
 # I don't love big lines.
